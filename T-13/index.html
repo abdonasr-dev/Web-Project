@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Task13</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-item-center">
+        <img src="./assets/Img/logo.png" alt="Logo">
+        <nav aria-label="Main navigation  ">
+            <ul class="d-flex justify-content-between align-item-center  ">
+                <li><a id="frist-a" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="d-flex align-item-center ">
+            <label aria-label="choose language" class="d-flex align-item-center">
+                <svg for="lan" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 12H22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <select aria-label="language selection" id="lan">
+                    <option>EN</option>
+                    <option>AR</option>
+                </select>
+            </label>
+            <button class="login-button d-flex align-item-center" aria-label="login">Login</button>
+        </div>
+    </header>
+    <!--__________________________________________________________-->
+    <!-- H e r o_______S e c t i o n -->
+    <section class="hero-section">
+        <div class="container">
+
+            <div class="row justify-content-between">
+
+                <div class="text-group col-auto">
+                    <h1 class="d-block">Transform Your <span class="one">Body</span><span class="d-block">Transform Your
+                            <span class="one"> Life</span></span></h1>
+                    <p>Embark on a Journey to Wellness: Elevate Your Fitness Experience with [Gym Name], Your Ultimate
+                        Destination for Unleashing Your Full Potential and Embracing a Vibrant, Active Lifestyle.</p>
+                    <div class="button-group d-flex">
+                        <button class="one" aria-label="Get Started">Get Started</button>
+                        <button class="two d-flex align-item-center" aria-label="Watch Video"><svg width="12"
+                                height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.1552 4.28943C10.4354 4.43842 10.6698 4.66083 10.8332 4.93284C10.9966 5.20484 11.083 5.51619 11.083 5.83351C11.083 6.15084 10.9966 6.46218 10.8332 6.73419C10.6698 7.00619 10.4354 7.22861 10.1552 7.3776L2.68158 11.4417C1.47817 12.0968 0 11.2451 0 9.89818V1.76943C0 0.421929 1.47817 -0.429154 2.68158 0.224763L10.1552 4.28943Z"
+                                    fill="white" />
+                            </svg>
+                            <span>Watch Video</span></button>
+                    </div>
+                    <div class="d-flex justify-content-between count-group">
+                        <div class="count">
+                            <span>103+</span>
+                            <p>Expert Trainers</p>
+                        </div>
+                        <span></span>
+                        <div class="count">
+                            <span>680+</span>
+                            <p>Member Joined</p>
+                        </div>
+                        <span></span>
+                        <div class="count">
+                            <span>140+</span>
+                            <p>Fitness Programs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image col-auto">
+                    <svg class="svg-back" width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 16.9889V26.2265L45.4256 0H29.4256L0 16.9889Z" fill="#D7FB00" />
+                        <path d="M72.7269 0L0 41.9889V51.2265L88.7269 0H72.7269Z" fill="#D7FB00" />
+                        <path d="M116.028 0L0 66.9889V76.2265L132.028 0H116.028Z" fill="#D7FB00" />
+                        <path d="M159.329 0L0 91.9889V101.226L175.329 0H159.329Z" fill="#D7FB00" />
+                        <path d="M200 1.51882L0 116.989V126.226L200 10.7564V1.51882Z" fill="#D7FB00" />
+                        <path d="M200 26.5188L0 141.989V151.226L200 35.7564V26.5188Z" fill="#D7FB00" />
+                        <path d="M200 51.5188L0 166.989V176.226L200 60.7564V51.5188Z" fill="#D7FB00" />
+                        <path d="M200 76.5188L0 191.989V201.226L200 85.7564V76.5188Z" fill="#D7FB00" />
+                        <path d="M200 101.519L0 216.989V226.226L200 110.756V101.519Z" fill="#D7FB00" />
+                        <path d="M200 126.519L0 241.989V251.226L200 135.756V126.519Z" fill="#D7FB00" />
+                        <path d="M200 151.519L0 266.989V276.226L200 160.756V151.519Z" fill="#D7FB00" />
+                        <path d="M200 176.519L0 291.989V300H2.1243L200 185.756V176.519Z" fill="#D7FB00" />
+                        <path d="M200 201.519L29.4256 300H45.4256L200 210.756V201.519Z" fill="#D7FB00" />
+                        <path d="M200 226.519L72.7269 300H88.7269L200 235.756V226.519Z" fill="#D7FB00" />
+                        <path d="M200 251.519L116.028 300H132.028L200 260.756V251.519Z" fill="#D7FB00" />
+                        <path d="M200 276.519L159.329 300H175.329L200 285.756V276.519Z" fill="#D7FB00" />
+                    </svg>
+                    <img src="./assets/Img/hero-img.png" alt="Athlete training in a modern gym environment">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--____________________________________---->
+    <!-- S e c o n d___S e c t i o n-->
+    <section class="second-section">
+
+        <div class="container">
+
+            <div class="text-group row flex-column justify-content-center align-item-center">
+                <h2>Why Should You Choose Us?</h2>
+                <p>we're dedicated to providing you with a comprehensive range of services tailored to meet your fitness
+                    needs and goals. Whether you're a seasoned athlete or just beginning your fitness journey, we have
+                    something for everyone. Here's a glimpse of what we offer</p>
+            </div>
+
+            <div class="row row-two">
+
+                <div class="text col-6  d-flex flex-column justify-content-center">
+                    <div class="d-flex  ">
+                        <svg width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.3478 8.07065C16.2967 8.07065 18.0185 8.53696 19.4174 9.14674C20.7087 9.72065 21.5217 11.012 21.5217 12.4109V14.3478H7.1739V12.4228C7.1739 11.012 7.98694 9.72065 9.27825 9.1587C10.6772 8.53696 12.3989 8.07065 14.3478 8.07065ZM4.78259 8.36957C6.09781 8.36957 7.1739 7.29348 7.1739 5.97826C7.1739 4.66304 6.09781 3.58696 4.78259 3.58696C3.46738 3.58696 2.39129 4.66304 2.39129 5.97826C2.39129 7.29348 3.46738 8.36957 4.78259 8.36957ZM6.13368 9.68478C5.69129 9.61304 5.2489 9.56522 4.78259 9.56522C3.5989 9.56522 2.47499 9.8163 1.45868 10.2587C1.02551 10.4438 0.656307 10.7522 0.396963 11.1455C0.137619 11.5388 -0.000426188 11.9996 -1.43399e-05 12.4707V14.3478H5.38042V12.4228C5.38042 11.4304 5.65542 10.4978 6.13368 9.68478ZM23.913 8.36957C25.2282 8.36957 26.3043 7.29348 26.3043 5.97826C26.3043 4.66304 25.2282 3.58696 23.913 3.58696C22.5978 3.58696 21.5217 4.66304 21.5217 5.97826C21.5217 7.29348 22.5978 8.36957 23.913 8.36957ZM28.6956 12.4707C28.6956 11.5022 28.1217 10.6413 27.2369 10.2587C26.1885 9.80122 25.0569 9.56513 23.913 9.56522C23.4467 9.56522 23.0043 9.61304 22.5619 9.68478C23.0402 10.4978 23.3152 11.4304 23.3152 12.4228V14.3478H28.6956V12.4707ZM14.3478 0C16.3326 0 17.9348 1.60217 17.9348 3.58696C17.9348 5.57174 16.3326 7.17391 14.3478 7.17391C12.363 7.17391 10.7609 5.57174 10.7609 3.58696C10.7609 1.60217 12.363 0 14.3478 0Z"
+                                fill="#D7FB00" />
+                        </svg>
+                        <div>
+                            <h3>Group Fitness Classes</h3>
+                            <p>we offer a variety of classes to keep you engaged and challenged. With options suitable
+                                for
+                                all fitness levels, you'll find the perfect class to help you reach your goals.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.57 12.86L20 11.43L18.57 10L15 13.57L6.43 5L10 1.43L8.57 0L7.14 1.43L5.71 0L3.57 2.14L2.14 0.71L0.71 2.14L2.14 3.57L0 5.71L1.43 7.14L0 8.57L1.43 10L5 6.43L13.57 15L10 18.57L11.43 20L12.86 18.57L14.29 20L16.43 17.86L17.86 19.29L19.29 17.86L17.86 16.43L20 14.29L18.57 12.86Z"
+                                fill="#D7FB00" />
+                        </svg>
+                        <div>
+                            <h3>Personal Training</h3>
+                            <p>With one-on-one sessions or small group training available, you'll receive the support
+                                and
+                                accountability you need to succeed.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M-1 -1.99988H23V22.0001H-1V-1.99988Z" fill="#D7FB00" />
+                        </svg>
+
+                        <div>
+                            <h3>Nutrition Guidance</h3>
+                            <p>Our registered dietitian will work with you to develop a personalised nutrition plan
+                                based on
+                                your dietary preferences, lifestyle, and fitness goals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image col-6 d-flex justify-content-end ">
+
+                    <img aria-hidden="true" src="./assets/Img/second-section.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--______________________________________________---->
+    <!-- T h i r d_____S e c t i o n-->
+    <section class="third-section">
+
+        <div class="container">
+
+            <div class="row flex-column justify-content-center align-item-center">
+                <div id="group-card" class="d-flex flex-column">
+
+                    <h4>What Our Happy Client Say About Us</h4>
+                    <div class="d-flex align-item-center">
+                        <div class="dir d-flex align-item-center justify-content-center">
+                            <svg id="dir" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.40667 0.197073L8.78962e-07 6.63707L6.40667 13.0771C6.46453 13.1531 6.53804 13.2157 6.62222 13.2608C6.70641 13.3059 6.7993 13.3324 6.89461 13.3385C6.98992 13.3446 7.08542 13.3301 7.17466 13.2961C7.26389 13.262 7.34477 13.2092 7.41182 13.1412C7.47886 13.0732 7.53052 12.9916 7.56328 12.9019C7.59604 12.8121 7.60914 12.7164 7.6017 12.6212C7.59426 12.526 7.56644 12.4335 7.52014 12.35C7.47384 12.2664 7.41013 12.1938 7.33333 12.1371L2.54 7.30374L15.2933 7.30374C15.4701 7.30374 15.6397 7.2335 15.7647 7.10848C15.8898 6.98345 15.96 6.81388 15.96 6.63707C15.96 6.46026 15.8898 6.29069 15.7647 6.16567C15.6397 6.04064 15.4701 5.97041 15.2933 5.97041L2.54 5.9704L7.33333 1.13707C7.45799 1.01154 7.52766 0.841624 7.52704 0.664715C7.52641 0.487806 7.45554 0.318391 7.33 0.193739C7.20447 0.069087 7.03455 -0.000590356 6.85764 3.52315e-05C6.68073 0.000659865 6.51132 0.0715369 6.38667 0.197073L6.40667 0.197073Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <div class="card d-flex flex-column align-item-start ">
+
+                            <div class="d-flex align-item-center">
+                                <img width="32px" height="32px" src="./assets/Img/personal.png" alt="personal image">
+                                <div id="content-img" class="d-flex flex-column">
+                                    <h5>John D</h5>
+                                    <span>Member since 2021</span>
+                                </div>
+                            </div>
+                            <div class="rating ">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+
+                            <p>"I've been a member of [Gym Name] for years, and it's become like a second home to me.
+                                The
+                                sense
+                                of community here is unlike any other gym I've been to. Everyone is so friendly and
+                                encouraging,
+                                and the trainers truly care about helping you reach your goals. I can't imagine working
+                                out
+                                anywhere else!"</p>
+                        </div>
+                        <div class="dir d-flex align-item-center justify-content-center">
+                            <svg id="dir" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.55329 13.1428L15.96 6.70277L9.55329 0.262772C9.49543 0.18679 9.42192 0.124127 9.33774 0.0790242C9.25356 0.0339219 9.16066 0.00743366 9.06535 0.00135255C8.97004 -0.00472855 8.87454 0.00973981 8.7853 0.0437777C8.69607 0.0778156 8.61519 0.130628 8.54814 0.198641C8.4811 0.266654 8.42944 0.348278 8.39668 0.437988C8.36392 0.527699 8.35082 0.6234 8.35826 0.718615C8.36571 0.813829 8.39352 0.906333 8.43982 0.989864C8.48612 1.07339 8.54983 1.146 8.62663 1.20277L13.42 6.03611L0.666628 6.0361C0.489817 6.0361 0.320248 6.10634 0.195224 6.23137C0.0701997 6.35639 -3.84322e-05 6.52596 -3.844e-05 6.70277C-3.84477e-05 6.87958 0.0701997 7.04915 0.195224 7.17418C0.320248 7.2992 0.489817 7.36944 0.666628 7.36944L13.42 7.36944L8.62663 12.2028C8.50198 12.3283 8.4323 12.4982 8.43292 12.6751C8.43355 12.852 8.50442 13.0215 8.62996 13.1461C8.7555 13.2708 8.92541 13.3404 9.10232 13.3398C9.27923 13.3392 9.44864 13.2683 9.57329 13.1428L9.55329 13.1428Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+
+
+
+                    </div>
+                    <div class="line d-flex align-item-center justify-content-center">
+                        <img width="188px" height="48px" src="./assets/Img/line.png" alt="Line Image">
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.38586 0.690968C8.68521 -0.230343 9.98862 -0.230344 10.288 0.690967L11.8066 5.36473C11.9404 5.77675 12.3244 6.05571 12.7576 6.05571H17.6719C18.6406 6.05571 19.0434 7.29533 18.2597 7.86473L14.284 10.7533C13.9335 11.0079 13.7868 11.4593 13.9207 11.8713L15.4393 16.5451C15.7386 17.4664 14.6842 18.2325 13.9004 17.6631L9.9247 14.7746C9.57421 14.5199 9.09962 14.5199 8.74913 14.7746L4.77339 17.6631C3.98968 18.2325 2.9352 17.4664 3.23455 16.5451L4.75314 11.8713C4.88702 11.4593 4.74036 11.0079 4.38987 10.7533L0.414135 7.86473C-0.369579 7.29533 0.0331967 6.05571 1.00192 6.05571H5.9162C6.34943 6.05571 6.73339 5.77675 6.86726 5.36473L8.38586 0.690968Z"
+                                fill="#F7BA33" />
+                        </svg>
+
+                        <p>4.9 (450 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--________________________________________-->
+    <!-- F o u r t h_____S e c t i o n -->
+    <section class="fourth-section">
+
+        <div class="container c">
+
+            <div class=" row flex-column justify-content-center align-item-center">
+                <div class=" group col-auto d-flex flex-column justify-content-center align-item-center ">
+                    <div class="text-group d-flex flex-column  align-item-center">
+                        <h5>Choose The Best Plan For Your Needs</h5>
+                        <p> we offer flexible membership options to fit your lifestyle and budget. Select the plan that
+                            best
+                            suits your needs and start your fitness journey today!</p>
+                    </div>
+                    <div class="select-plan d-flex align-item-center justify-content-between ">
+                        <span>Monthly</span>
+                        <span>Annually</span>
+                    </div>
+                </div>
+                <div class="d-flex col-12  ">
+                    <div class="plan-price d-flex flex-column justify-content-between  ">
+                        <div id="text" class="d-flex flex-column">
+                            <h6>Basic Membership</h6>
+                            <span id="span">$23.99 <span id="spanone">/ Per month</span></span>
+                        </div>
+                        <ul class="d-flex flex-column justify-content-start   ">
+                            <li>Access to all gym facilities during regular operating hours</li>
+                            <li>Unlimited use of cardio and strength training equipment</li>
+                            <li>Discounted rates on group fitness classes and personal training sessions</li>
+                            <li>Locker room access with showers and amenities</li>
+                            <li>Monthly membership starting at $XX.XX</li>
+                        </ul>
+                        <button class="" aria-label="choose plan">Choose Plan</button>
+                    </div>
+                    <div class="plan-price  prime-plan  d-flex flex-column justify-content-between  ">
+                        <div id="text" class="d-flex flex-column">
+                            <h6>Basic Membership</h6>
+                            <span id="span">$23.99 <span id="spanone">/ Per month</span></span>
+                        </div>
+                        <ul class="d-flex flex-column justify-content-start   ">
+                            <li>Access to all gym facilities during regular operating hours</li>
+                            <li>Unlimited use of cardio and strength training equipment</li>
+                            <li>Discounted rates on group fitness classes and personal training sessions</li>
+                            <li>Locker room access with showers and amenities</li>
+                            <li>Monthly membership starting at $XX.XX</li>
+                        </ul>
+                        <button class="" aria-label="choose plan">Choose Plan</button>
+                    </div>
+                    <div class="plan-price d-flex flex-column justify-content-between  ">
+                        <div id="text" class="d-flex flex-column">
+                            <h6>Basic Membership</h6>
+                            <span id="span">$23.99 <span id="spanone">/ Per month</span></span>
+                        </div>
+                        <ul class="d-flex flex-column justify-content-start   ">
+                            <li>Access to all gym facilities during regular operating hours</li>
+                            <li>Unlimited use of cardio and strength training equipment</li>
+                            <li>Discounted rates on group fitness classes and personal training sessions</li>
+                            <li>Locker room access with showers and amenities</li>
+                            <li>Monthly membership starting at $XX.XX</li>
+                        </ul>
+                        <button class="" aria-label="choose plan">Choose Plan</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--_______________________________-->
+    <!-- F  o o t e r -->
+    <footer>
+
+        <section class="footer">
+            <div class="footer-one container  ">
+                <div class="r">
+                    <nav aria-label="Footer navigation" class="d-flex justify-content-between">
+                        <ul>
+                            <li>Information</li>
+                            <li>FAQ</li>
+                            <li>Blog</li>
+                            <li>Support</li>
+                        </ul>
+                        <ul>
+                            <li>Company</li>
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Contact us</li>
+                            <li>Lift Media</li>
+                        </ul>
+                        <ul>
+                            <li id="dif">Learn More</li>
+                            <li>About Lift</li>
+                            <li>Environment</li>
+                            <li>Jobs</li>
+                        </ul>
+                    </nav>
+
+
+
+                    <div class="footer-two d-flex justify-content-between align-item-center">
+                        <img src="./assets/Img/logo.png" alt="Footer Logo">
+                        <nav aria-label="Footer link navigation " class="d-flex ">
+                            <ul class="d-flex align-item-center f-ul">
+                                <li>Terms</li>
+                                <li>Privacy</li>
+                                <li>Cookies</li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul class="d-flex align-item-center f-ul">
+                                <li><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.48367 2.9671C2.30301 2.9671 2.96722 2.30289 2.96722 1.48355C2.96722 0.664208 2.30301 0 1.48367 0C0.66433 0 0.00012207 0.664208 0.00012207 1.48355C0.00012207 2.30289 0.66433 2.9671 1.48367 2.9671Z"
+                                            fill="white" />
+                                        <path
+                                            d="M2.71984 3.95801H0.247258C0.110772 3.95801 0 4.06878 0 4.20527V11.623C0 11.7595 0.110772 11.8703 0.247258 11.8703H2.71984C2.85633 11.8703 2.9671 11.7595 2.9671 11.623V4.20527C2.9671 4.06878 2.85633 3.95801 2.71984 3.95801Z"
+                                            fill="white" />
+                                        <path
+                                            d="M10.088 3.54665C9.03126 3.18466 7.70942 3.50263 6.91671 4.07281C6.88951 3.96649 6.79258 3.88737 6.67736 3.88737H4.20478C4.06829 3.88737 3.95752 3.99814 3.95752 4.13463V11.5524C3.95752 11.6889 4.06829 11.7996 4.20478 11.7996H6.67736C6.81385 11.7996 6.92462 11.6889 6.92462 11.5524V6.22149C7.32419 5.8773 7.83898 5.76752 8.26031 5.94653C8.66878 6.11912 8.90269 6.54045 8.90269 7.10172V11.5524C8.90269 11.6889 9.01346 11.7996 9.14994 11.7996H11.6225C11.759 11.7996 11.8698 11.6889 11.8698 11.5524V6.60375C11.8416 4.57178 10.8857 3.81962 10.088 3.54665Z"
+                                            fill="white" />
+                                    </svg>
+                                </li>
+                                <li><svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.0932 2.02078H6.70158C6.84955 2.02078 6.96964 1.90762 6.96964 1.76819V0.252598C6.96964 0.113164 6.84955 0 6.70158 0H5.0932C3.46766 0 2.1445 1.24632 2.1445 2.77858V4.54676H0.268063C0.120092 4.54676 0 4.65993 0 4.79936V6.31495C0 6.45438 0.120092 6.56755 0.268063 6.56755H2.1445V11.8721C2.1445 12.0115 2.2646 12.1247 2.41257 12.1247H4.02095C4.16892 12.1247 4.28901 12.0115 4.28901 11.8721V6.56755H6.16545C6.28072 6.56755 6.38312 6.49783 6.42011 6.39477L6.95624 4.87918C6.98358 4.80239 6.96964 4.71752 6.91924 4.65134C6.86831 4.58566 6.78789 4.54676 6.70158 4.54676H4.28901V2.77858C4.28901 2.36078 4.64982 2.02078 5.0932 2.02078Z"
+                                            fill="white" />
+                                    </svg>
+                                </li>
+                                <li><svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.2202 1.26468C12.139 1.17289 12.0081 1.14981 11.9007 1.20642C11.8339 1.2416 11.7083 1.28776 11.5592 1.33338C11.7473 1.07616 11.8985 0.788169 11.9653 0.529303C11.9942 0.417733 11.952 0.300117 11.8601 0.233614C11.7682 0.167661 11.6458 0.167661 11.5539 0.233614C11.4091 0.33749 10.7102 0.649668 10.2683 0.750795C9.26957 -0.148913 8.10738 -0.242346 6.89924 0.483136C5.91712 1.07287 5.70338 2.27211 5.74506 3.00309C3.49709 2.7805 2.09979 1.55927 1.31324 0.54854C1.2582 0.47764 1.1695 0.440267 1.08614 0.445763C0.998509 0.452358 0.919427 0.502373 0.874542 0.579867C0.502641 1.22566 0.399513 1.9396 0.577449 2.64474C0.674699 3.02947 0.844619 3.36858 1.04179 3.64338C0.947213 3.59557 0.85584 3.53566 0.769811 3.46421C0.690729 3.39716 0.58012 3.38452 0.486611 3.42904C0.393635 3.47465 0.334323 3.57138 0.334323 3.67746C0.334323 4.88825 1.07065 5.69617 1.75834 6.11827C1.6472 6.10453 1.53125 6.07925 1.41423 6.04242C1.31377 6.01109 1.20476 6.04242 1.1353 6.12376C1.06584 6.20456 1.04927 6.31997 1.09255 6.41835C1.47888 7.29718 2.21093 7.90175 3.11664 8.12104C2.32581 8.59865 1.26728 8.83278 0.297988 8.71791C0.172418 8.69978 0.0527257 8.78167 0.0131845 8.90588C-0.0263567 9.03009 0.0254743 9.16639 0.136083 9.23015C1.60659 10.0793 2.93603 10.3827 4.08486 10.3827C5.75682 10.3827 7.04725 9.74073 7.83273 9.20377C9.95032 7.7583 11.2701 5.16305 11.0863 2.84096C11.4256 2.58319 11.9333 2.10723 12.248 1.59554C12.3132 1.49222 12.3014 1.35591 12.2202 1.26468Z"
+                                            fill="white" />
+                                    </svg>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
