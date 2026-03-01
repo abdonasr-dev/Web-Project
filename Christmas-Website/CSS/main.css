@@ -47,6 +47,56 @@ header nav > svg:nth-child(1){
     header nav svg{
          margin-left: 40px;
     }
+    /********************** Hero Section ******************************/
+    /* .hero-sc .container {
+        height: calc(100vh - 72px);
+    } */
+    .hero-sc .image img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-sc .text h1{
+        max-width: 450px;
+        font-weight: 600;
+        font-size: camp(40px,24px);
+        line-height: 140%;
+        color: var(--title);
+        margin: 0;
+        margin-bottom:16px ;
+    }
+    .hero-sc .text p{
+        max-width: 380px;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 15px;
+        margin-bottom: 48px;
+    }
+    .hero-sc .text button{
+        width: 204px;
+        height: 64px;
+        color: var(--white);
+        border-radius: 64px;
+        border: solid 0 var(--primary);
+        background-color: var(--primary);
+        padding: 20px 56px;
+    }
+    /******************************************************************/
+    .two-sc{
+        padding: 76px  0 32px 0;
+    }
+    .two-sc img{
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+    }
+    .two-sc .icons{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .two-sc h2{
+       font-weight: 600; 
+       font-size: 24px;
+    }
 @media (max-width:576px) {
     header li{
         display: none;
@@ -89,4 +139,5 @@ header nav > svg:nth-child(1){
         content: "";
         width: 10px;
     }
+    /*****************************/
 }
