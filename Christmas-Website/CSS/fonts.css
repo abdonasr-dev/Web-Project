@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-Bold.woff2') format('woff2'),
-        url('Poppins-Bold.woff') format('woff');
+    src: url('/Christmas-Website/Assets/Fonts/Poppins-Bold.woff2') format('woff2'),
+        url('/Christmas-Website/Assets/Fonts/Poppins-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-ExtraBold.woff2') format('woff2'),
-        url('Poppins-ExtraBold.woff') format('woff');
+    src: url('/Christmas-Website/Assets/Fonts/Poppins-ExtraBold.woff2') format('woff2'),
+        url('/Christmas-Website/Assets/Fonts/Poppins-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-Medium.woff2') format('woff2'),
-        url('Poppins-Medium.woff') format('woff');
+    src: url('/Christmas-Website/Assets/Fonts/Poppins-Medium.woff2') format('woff2'),
+        url('/Christmas-Website/Assets/Fonts/Poppins-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-Regular.woff2') format('woff2'),
-        url('Poppins-Regular.woff') format('woff');
+    src: url('/Christmas-Website/Assets/Fonts/Poppins-Regular.woff2') format('woff2'),
+        url('/Christmas-Website/Assets/Fonts/Poppins-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,10 +36,13 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins-SemiBold.woff2') format('woff2'),
-        url('Poppins-SemiBold.woff') format('woff');
+    src: url('/Christmas-Website/Assets/Fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('/Christmas-Website/Assets/Fonts/Poppins-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+}
+body{
+    font-family: 'Poppins';
 }
 

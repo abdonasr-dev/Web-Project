@@ -1,0 +1,92 @@
+@import url(grid.css);
+@import url(fonts.css);
+@import url(all.css);
+@import url(normalize.css);
+@import url(colors.css);
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+     color: var(--black) ;
+}
+li{
+    list-style: none;
+}
+.flex-wrap{flex-wrap: wrap;}
+.flex-grow{flex-grow: 1;}
+.flex-column{flex-direction: column;}
+.d-flex{display: flex;}
+.d-block{display: block;}
+.d-inline-block{display: inline-block;}
+.d-inline{display: inline;}
+
+.justify-content-center{justify-content: center;}
+.justify-content-start{justify-content: flex-start;}
+.justify-content-end{justify-content:flex-end;}
+.justify-content-between{justify-content: space-between;}
+
+.align-item-start{align-items: start;}
+.align-item-end{align-items: end;}
+.align-item-center{align-items: center;}
+/*********** H e a d e r ***********/
+header ul{
+    column-gap: 48px;
+}
+header{
+    padding: 24px 0;
+}
+header ul :first-child a{
+    color: var(--primary);
+}
+header nav > svg:nth-child(1){
+     display: none;   
+    }
+    header nav svg{
+         margin-left: 40px;
+    }
+@media (max-width:576px) {
+    header li{
+        display: none;
+    }
+    header nav{
+        direction: rtl;
+        position: relative;
+    }
+    header nav ul+svg{
+         margin-left: 0;
+    }
+    header nav>svg:nth-child(1){
+        display: inline-block;
+        margin-left: 19px;
+    }
+    header ul{
+        row-gap: 19px;
+        direction: ltr;
+    }
+    header nav>svg:nth-child(1):hover+ul     {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 15px);
+        width:calc(100vw - 32px ) ;
+        background: #f6f6f6;
+        border-radius: 0 0 6px 6px;
+        align-items: center;
+        justify-content: center;
+        padding: 64px 0;
+        background-image: url(../Assets/Images/nav-bar.png);
+        background-repeat: no-repeat;
+        background-size: 120px;
+        height: auto;
+    }
+   header nav>svg:nth-child(1):hover+ul li {
+    display: inline-block;
+   }
+    header nav>svg:nth-child(1):hover+ul::before{
+        content: "";
+        width: 10px;
+    }
+}
