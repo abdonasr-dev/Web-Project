@@ -1,12 +1,13 @@
 .container{
     width: 100%;
     max-width: 1280px;
-    padding-left: 182px;
-    padding-right: 182px;
+    padding-left: 64px;
+    padding-right: 64px;
     margin-inline: auto;
 }
 .row{
-    
+    margin-left: -64px;
+    margin-right: -64px;
     display: flex;
     flex-wrap: wrap;
 }

@@ -151,8 +151,7 @@ header nav > svg:nth-child(1){
 /************************** Fourth Section ************************************/
     .four-sc{
         padding: 72px 0  32px 0;
-        /* padding-inline-start: 118px; */
-        /* padding-inline-end: 118px; */
+        
     }
     
     .four-sc .row {
@@ -160,15 +159,16 @@ header nav > svg:nth-child(1){
     }
     .four-sc .cards{
         gap: 40px;
-        margin: auto;
+        justify-content: center;
     }
     .four-sc .card {
-        max-width: 200px;
+        width: 210px;
         border-radius: 12px;
         position: relative;
         padding: 32px 24px 24px;
         background-color: var(--white);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
     }
     .four-sc .card p{
         font-weight: 500;
@@ -195,6 +195,28 @@ header nav > svg:nth-child(1){
        top: 20px;
        left:160px;
     }
+
+@media (max-width:992px) {
+    .four-sc{
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+    }
+    .four-sc .cards{
+        gap: 24px;
+    }
+    .four-sc .card{
+        width: 200px;
+    }
+}
+
+@media (max-width:768px) {
+    .four-sc .cards{
+        gap: 20px;
+    }
+    .four-sc .card{
+        width: 190px;
+    }
+}
 
 
 
@@ -247,6 +269,13 @@ header nav > svg:nth-child(1){
     header nav>svg:nth-child(1):hover+ul::before{
         content: "";
         width: 10px;
+    }
+    .four-sc .cards{
+        gap: 16px;
+    }
+    .four-sc .card{
+        width: 100%;
+        max-width: 240px;
     }
     /*****************************/
 }
