@@ -151,8 +151,8 @@ header nav > svg:nth-child(1){
 /************************** Fourth Section ************************************/
     .four-sc{
         padding: 72px 0  32px 0;
-        padding-inline-start: 118px;
-        padding-inline-end: 118px;
+        /* padding-inline-start: 118px; */
+        /* padding-inline-end: 118px; */
     }
     
     .four-sc .row {
@@ -160,31 +160,32 @@ header nav > svg:nth-child(1){
     }
     .four-sc .cards{
         gap: 40px;
+        margin: auto;
     }
     .four-sc .card {
-        height: 247px;
-        width: 200px;
+        max-width: 200px;
         border-radius: 12px;
         position: relative;
-        padding: 24px;
+        padding: 32px 24px 24px;
         background-color: var(--white);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
     }
     .four-sc .card p{
         font-weight: 500;
         font-size: 14px;
+        margin-top: 4px;
 
     }
-    .four-sc .row .card:nth-child(1){
-        /* margin-bottom: 40px; */
-    }
+    
     .four-sc .card strong{
+        margin-top: 16px;
         font-size: 20px;
         font-weight: 600;
         color: var(--title); 
     }
     .four-sc .row .card img{
+        margin-inline-start: auto;
+        margin-inline-end: auto;
         width:120px;
         height: auto;
     }
