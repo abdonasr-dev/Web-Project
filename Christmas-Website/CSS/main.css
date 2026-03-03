@@ -196,6 +196,87 @@ header nav > svg:nth-child(1){
        left:160px;
     }
 
+    /********************Section Five**************************/
+
+    .five-sc {
+        padding: 72px 0  32px 0;
+    }
+    .five-sc h2{
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--title);
+    }
+    .five-sc .gifts img{
+        width: 100%;
+        height: auto;
+        background-image: url(../Assets/Images/bac-sec-fiv.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        border-radius: 12px;
+    }
+    .five-sc .row{
+        row-gap:64px ;
+    }
+    .five-sc .gifts{
+        gap: 64px;
+        flex-wrap: wrap;
+    }
+    .five-sc .gift{
+        max-width: 230px;
+        position: relative;
+        
+    }
+    .five-sc .gift p{
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    .five-sc .gift strong{
+        padding-top: 16px;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--title); 
+    }
+    .five-sc .gift svg{
+        border-radius: 4px 4px 12px 4px;
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+        background-color: var(--primary);
+        position: relative;
+        transform: translate(89px, -8px);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:992px) {
     .four-sc{
         padding-inline-start: 0;
