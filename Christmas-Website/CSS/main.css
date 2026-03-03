@@ -247,12 +247,62 @@ header nav > svg:nth-child(1){
         position: relative;
         transform: translate(89px, -8px);
     }
-
-
-
-
-
-
+    /******************** Section Six *****************************/
+    .six-sc{
+        padding: 96px 0  72px 0;
+    }
+    .six-sc img{
+        max-width: 319.9999956848051px;
+        width: 100%;
+        height: auto;
+    }
+    .six-sc .row{
+        margin: auto;
+        background-color: var(--primary);
+        border-radius: 64px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .six-sc .text div{
+        width: min-content;
+        row-gap: 16px;
+        
+    }
+    .six-sc .text h3{
+        color: var(--white);
+        font-size: 36px;
+        font-weight: 600;
+        max-width: 208px;
+        text-align: start;
+        margin-bottom:24px ;
+    }
+    .six-sc .text input{
+        border: none;
+        padding-left: 24px;
+        height: 55px;
+        width: 264px;
+        border-radius: 64px;
+    }
+    .six-sc .text button{
+        border: none;
+        padding-left: 24px;
+        height: 55px;
+        width: 264px;
+        border-radius: 64px;
+    }
+    /**************************** Footer ****************************************/
+    footer img{
+        width: 100%;
+        height: auto;
+    }
+    footer ul li:first-child{
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    footer ul li:not(:last-of-type)  {
+        margin-bottom:12px;
+    }
 
 
 
