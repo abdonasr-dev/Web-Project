@@ -291,8 +291,27 @@ header nav > svg:nth-child(1){
         border-radius: 64px;
     }
     /**************************** Footer ****************************************/
+    footer{
+        padding: 72px 0 72px 0;
+    }
+    footer {
+        background-image: url(../Assets/Images/footer-left.png);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position-x: 120px;
+        background-position-y: center;
+
+    }
+    footer .row{
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-image: url(../Assets/Images/footer-right.png);
+        background-position-x: right;
+        background-position-y: 70px;
+        padding-bottom:100px;
+    }
     footer img{
-        width: 100%;
+        width: 65%;
         height: auto;
     }
     footer ul li:first-child{
@@ -303,6 +322,7 @@ header nav > svg:nth-child(1){
     footer ul li:not(:last-of-type)  {
         margin-bottom:12px;
     }
+
 
 
 
