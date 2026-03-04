@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Doppio One';
+    src: url('../Font/DoppioOne-Regular.woff2') format('woff2'),
+        url('../Font/DoppioOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+p,h1,h2,h3,h4,h5,h6,span,section,footer,header,
+a,div,input,li,ul,label,textarea{
+    font-family:'Doppio One' ;
+}
+

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../Fonts/ClashDisplay-Regular.woff2') format('woff2'),
+        url('../Fonts/ClashDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../Fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+        url('../Fonts/ClashDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+h1,h2,h3,h4,h5,h6,span,p,a,li,ul,nav,section,header,div,label,input,textarea{
+    font-family: 'Clash Display';
+}

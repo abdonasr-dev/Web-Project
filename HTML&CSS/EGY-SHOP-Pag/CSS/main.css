@@ -1,0 +1,225 @@
+/* C o l o r   S t y l e */
+@import url(./colors.css);
+/* F o n t e   S t y l e */
+@import url(./fonts.css);
+/* G r i d   S t y l e */
+@import url(./grid.css);
+
+/* R e s e t */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    height:56px ;
+    color: var(--white);
+    background: var(--color2);
+    border: solid 1px var(--color2);
+    border-radius: 4px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+}
+.btn-s{
+    background-color: transparent;  
+    color: var(--color2);
+}
+
+.flex-wrap{flex-wrap: wrap;}
+.flex-grow{flex-grow: 1;}
+.flex-column{flex-direction: column;}
+.d-flex{display: flex;}
+.d-block{display: block;}
+.d-inline-block{display: inline-block;}
+.d-inline{display: inline;}
+
+.justify-content-center{justify-content: center;}
+.justify-content-start{justify-content: flex-start;}
+.justify-content-end{justify-content:flex-end;}
+.justify-content-between{justify-content: space-between;}
+
+.align-item-start{align-items: start;}
+.align-item-end{align-items: end;}
+.align-item-center{align-items: center;}
+
+
+/*   H e a d e r   */
+header{
+    background-color: var(--color1);
+}
+header .container{
+    min-height: 120px;
+}
+header ul{
+    list-style: none;
+    gap: 40px;
+}
+ header a{
+    text-decoration: none;
+    color: var(--white);
+}
+/* H e r o   S e c t i o n*/
+
+.hero-section{
+    background-image:url(../img/hero-big.png) ;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.hero-section .row{
+    min-height: calc(100vh - 120px);}
+
+.hero-section .text-group{
+    gap: 64px 0px;
+}
+.btn-hero{
+    gap: 0 24px;
+}
+/*---------------------------------------*/
+/* S e c on d a r y     S e c t i o n */
+    
+
+.secondary-section {
+    background-color: var(--color1);
+        color: var(--white);
+    /* background-image: url(../img/S-I.png);
+    background-repeat: no-repeat;
+    background-position: right ; */
+    
+}
+
+
+.secondary-section .text-group{
+    gap: 24px;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 80px   ;
+}
+
+
+/*---------------------------*/
+/* T h i r d    S e c t i o n */ 
+.third-section{
+    margin-top: 191px;
+}
+.third-section .container{
+    row-gap:31px ;
+}
+.third-section .row{
+    row-gap: 31px;
+    
+}
+.I5{
+    padding-top:24px;
+    padding-bottom: 24px;
+    min-height: 288px;
+  
+}
+.item{
+    gap: 32px;
+}
+.third-section .text-group{
+    gap: 16px;
+}
+.third-section img{
+    border: #444444 solid 1px;
+    border-radius: 8px;
+}
+.third-section .text-group-1{
+    width: 591px;
+    color: var(--dark-gray);
+    gap: 16px;
+}
+/*----------------------------------*/
+/* F o u r t h    S e c t i o n */
+.fourth-section{
+    margin-top: 222px;
+}
+.fourth-section .f-1{
+    padding: 46.5px 48px;
+    color: var(--white);
+    background: var(--color1);
+}
+.fourth-section legend{
+    font-size: 32px;
+}
+.fourth-section label{
+    font-size: 16px;
+}
+.control-form{
+    row-gap: 40px;
+}
+.form-1{
+    row-gap: 24px;
+}
+.form-1 div{
+    row-gap: 8px;
+}
+.form-1 input{
+    min-width: 508px;
+    min-height: 56px;
+}
+.form-textarea{
+    row-gap: 12px;
+}
+/*-------------------------------*/
+/* M a i n   F o o t e r  */
+.main-footer .container{
+    
+    background: var(--color3);
+    color: var(--white);
+    background-image: url(../img/footer-back.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding:40px 96px ;
+}
+.main-footer .row{
+    
+    column-gap: 100px;
+}
+.main-footer .logo .s-1{
+    color: var(--color2);
+    letter-spacing: -0.6px;
+
+}
+.main-footer .c-1{
+    row-gap: 16px;
+}
+.main-footer .icon{
+    column-gap :16px ;
+}
+.c-1 p{
+    font-size: 16px;
+    line-height: 26px;
+    width: 255px;
+}
+
+.c-2-1{
+    row-gap: 24px;
+
+}
+.c-2-1-1{
+    row-gap:9px;
+    white-space: nowrap;
+}
+.c-2-1-s{
+    margin-left: -54px;
+}
+.c-2-1-c{
+    margin-left: -30px;
+}
+
