@@ -3,407 +3,484 @@
 @import url(all.css);
 @import url(normalize.css);
 @import url(colors.css);
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
-     color: var(--black) ;
+    color: var(--black);
 }
-li{
+
+li {
     list-style: none;
 }
-p{
+
+p {
     color: var(--text-color);
 }
-.flex-wrap{flex-wrap: wrap;}
-.flex-grow{flex-grow: 1;}
-.flex-column{flex-direction: column;}
-.d-flex{display: flex;}
-.d-block{display: block;}
-.d-inline-block{display: inline-block;}
-.d-inline{display: inline;}
 
-.justify-content-center{justify-content: center;}
-.justify-content-start{justify-content: flex-start;}
-.justify-content-end{justify-content:flex-end;}
-.justify-content-between{justify-content: space-between;}
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
-.align-item-start{align-items: start;}
-.align-item-end{align-items: end;}
-.align-item-center{align-items: center;}
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-item-start {
+    align-items: start;
+}
+
+.align-item-end {
+    align-items: end;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
 /*********** H e a d e r ***********/
-header ul{
+header ul {
     column-gap: 48px;
 }
-header{
+
+header {
     padding: 24px 0;
 }
-header ul :first-child a{
+
+header ul :first-child a {
     color: var(--primary);
 }
-header nav > svg:nth-child(1){
-     display: none;   
-    }
-    header nav svg{
-         margin-left: 40px;
-    }
-    /********************** Hero Section ******************************/
-    .hero-sc{
-        padding: 64px 0 56px 0;
-    }
-    /* .hero-sc .container {
+
+header nav>svg:nth-child(1) {
+    display: none;
+}
+
+header nav svg {
+    margin-left: 40px;
+}
+
+
+/********************** Hero Section ******************************/
+.hero-sc {
+    padding: 64px 0 56px 0;
+}
+
+/* .hero-sc .container {
         height: calc(100vh - 72px);
     } */
-    .hero-sc .image img{
-        width: 100%;
-        height: auto;
-    }
-    .hero-sc .text h1{
-        max-width: 450px;
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 140%;
-        color: var(--title);
-        margin: 0;
-        padding-bottom:16px ;
-    }
-    .hero-sc .text p{
-        max-width: 380px;
-        font-weight: 400;
-        font-size: 15px;
-        padding-bottom: 48px;
-    }
-    .hero-sc .text button{
-        width: 204px;
-        height: 64px;
-        color: var(--white);
-        border-radius: 64px;
-        border: solid 0 var(--primary);
-        background-color: var(--primary);
-        padding: 20px 56px;
-    }
-    /***************************** Second Section *************************************/
-    .two-sc{
-        padding: 76px  0 32px 0;
-    }
-    .two-sc img{
-        width: 100%;
-        max-width: 120px;
-        height: auto;
-        margin-bottom: 12px;
-    }
-    .two-sc .icons{
-        flex-wrap: wrap;
-    }
-    .two-sc h3{
-        margin-bottom: 4px;
-        font-weight: 600;
-        font-size: 20px;
-    }
-    .two-sc .icons .icon p{
-        max-width: 142px;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 400;
-        
-    }
-    .two-sc h2{
-        text-align: center;
-        max-width: 205px;
-       font-weight: 600; 
-       font-size: 24px;
-       margin-bottom: 56px;
-    }
-    /************************ Therd Section *******************************/
-   .three-sc{
-    padding:52px 0;
-   }
-    .three-sc .text h2{
-       
-        max-width: 235px;
-        font-weight: 600;
-        font-size: 24px;
-        color: var(--title);
-        padding-bottom: 24px;
-    }
-    .three-sc .text p{
-        font-weight: 400;
-        font-size: 16px;
-        max-width: 372px;
-        padding-bottom: 40px;
-    }
-    .three-sc .text button{
-        width: 215px;
-        height: 56px;
-        color: var(--white);
-        border-radius: 64px;
-        border: solid 0 var(--primary);
-        background-color: var(--primary);
-        padding: 16px 32px;
-    }
-    .three-sc .row img{
-        width: 100%;
-        height: auto;
-    }
+.hero-sc .image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-sc .text h1 {
+    max-width: 450px;
+    font-weight: 600;
+    font-size: clamp(20px ,24px, 40px);
+    line-height: 140%;
+    color: var(--title);
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.hero-sc .text p {
+    max-width: 380px;
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 48px;
+}
+
+.hero-sc .text button {
+    width: 204px;
+    height: 64px;
+    color: var(--white);
+    border-radius: 64px;
+    border: solid 0 var(--primary);
+    background-color: var(--primary);
+    padding: 20px 56px;
+}
+
+/***************************** Second Section *************************************/
+.two-sc {
+    padding: 76px 0 32px 0;
+}
+
+.two-sc img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.two-sc .icons {
+    flex-wrap: wrap;
+}
+
+.two-sc h3 {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.two-sc .icons .icon p {
+    max-width: 142px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.two-sc h2 {
+    text-align: center;
+    max-width: 205px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 56px;
+}
+
+/************************ Therd Section *******************************/
+.three-sc {
+    padding: 52px 0;
+}
+
+.three-sc .text h2 {
+
+    max-width: 235px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--title);
+    padding-bottom: 24px;
+}
+
+.three-sc .text p {
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 372px;
+    padding-bottom: 40px;
+}
+
+.three-sc .text button {
+    width: 215px;
+    height: 56px;
+    color: var(--white);
+    border-radius: 64px;
+    border: solid 0 var(--primary);
+    background-color: var(--primary);
+    padding: 16px 32px;
+}
+
+.three-sc .row img {
+    width: 100%;
+    height: auto;
+}
+
 /************************** Fourth Section ************************************/
-    .four-sc{
-        padding: 72px 0  32px 0;
-        
-    }
-    
-    .four-sc .row {
-        row-gap: 64px;
-    }
-    .four-sc .cards{
-        gap: 40px;
-        justify-content: center;
-    }
-    .four-sc .card {
-        width: 210px;
-        border-radius: 12px;
-        position: relative;
-        padding: 32px 24px 24px;
-        background-color: var(--white);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    }
-    .four-sc .card p{
-        font-weight: 500;
-        font-size: 14px;
-        margin-top: 4px;
+.four-sc {
+    padding: 72px 0 32px 0;
 
-    }
-    
-    .four-sc .card strong{
-        margin-top: 16px;
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--title); 
-    }
-    .four-sc .row .card img{
-        margin-inline-start: auto;
-        margin-inline-end: auto;
-        width:120px;
-        height: auto;
-    }
-    
-    .four-sc .card svg{
-       position: absolute;
-       top: 20px;
-       left:160px;
-    }
+}
 
-    /********************Section Five**************************/
+.four-sc .row {
+    row-gap: 64px;
+}
 
-    .five-sc {
-        padding: 72px 0  32px 0;
-    }
-    .five-sc h2{
-        font-weight: 600;
-        font-size: 24px;
-        color: var(--title);
-    }
-    .five-sc .gifts img{
-        width: 100%;
-        height: auto;
-        background-image: url(../Assets/Images/bac-sec-fiv.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: center;
-        border-radius: 12px;
-    }
-    .five-sc .row{
-        row-gap:64px ;
-    }
-    .five-sc .gifts{
-        gap: 64px;
-        flex-wrap: wrap;
-    }
-    .five-sc .gift{
-        max-width: 230px;
-        position: relative;
-        
-    }
-    .five-sc .gift p{
-        font-weight: 500;
-        font-size: 14px;
-        margin-top: 4px;
-    }
-    .five-sc .gift strong{
-        padding-top: 16px;
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--title); 
-    }
-    .five-sc .gift svg{
-        border-radius: 4px 4px 12px 4px;
-        width: 36px;
-        height: 36px;
-        padding: 8px;
-        background-color: var(--primary);
-        position: relative;
-        transform: translate(89px, -8px);
-    }
-    /******************** Section Six *****************************/
-    .six-sc{
-        padding: 96px 0  72px 0;
-    }
-    .six-sc img{
-        max-width: 319.9999956848051px;
-        width: 100%;
-        height: auto;
-    }
-    .six-sc .row{
-        margin: auto;
-        background-color: var(--primary);
-        border-radius: 64px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .six-sc .text div{
-        width: min-content;
-        row-gap: 16px;
-        
-    }
-    .six-sc .text h3{
-        color: var(--white);
-        font-size: 36px;
-        font-weight: 600;
-        max-width: 208px;
-        text-align: start;
-        margin-bottom:24px ;
-    }
-    .six-sc .text input{
-        border: none;
-        padding-left: 24px;
-        height: 55px;
-        width: 264px;
-        border-radius: 64px;
-    }
-    .six-sc .text button{
-        border: none;
-        padding-left: 24px;
-        height: 55px;
-        width: 264px;
-        border-radius: 64px;
-    }
-    /**************************** Footer ****************************************/
-    footer{
-        padding: 72px 0 72px 0;
-    }
-    footer {
-        background-image: url(../Assets/Images/footer-left.png);
-        background-repeat: no-repeat;
-        background-size: 100px;
-        background-position-x: 120px;
-        background-position-y: center;
+.four-sc .cards {
+    gap: 40px;
+    justify-content: center;
+}
 
-    }
-    footer .row{
-        background-repeat: no-repeat;
-        background-size: 100px;
-        background-image: url(../Assets/Images/footer-right.png);
-        background-position-x: right;
-        background-position-y: 70px;
-        padding-bottom:100px;
-    }
-    footer img{
-        width: 65%;
-        height: auto;
-    }
-    footer ul li:first-child{
-        font-weight: 600;
-        font-size: 20px;
-        margin-bottom: 24px;
-    }
-    footer ul li:not(:last-of-type)  {
-        margin-bottom:12px;
-    }
+.four-sc .card {
+    width: 200px;
+    border-radius: 12px;
+    position: relative;
+    padding: 32px 24px 24px;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+}
 
+.four-sc .card p {
+    font-weight: 500;
+    font-size: 11px;
+    margin-top: 4px;
 
+}
 
+.four-sc .card strong {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title);
+}
 
+.four-sc .row .card img {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    width: 120px;
+    height: auto;
+}
 
+.four-sc .card svg {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+}
 
+/********************Section Five**************************/
 
+.five-sc {
+    padding: 72px 0 32px 0;
+}
 
+.five-sc h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--title);
+}
 
+.five-sc .gifts img {
+    width: 100%;
+    height: auto;
+    background-image: url(../Assets/Images/bac-sec-fiv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 12px;
+}
 
+.five-sc .row {
+    row-gap: 64px;
+}
 
+.five-sc .gifts {
+    gap: 64px;
+    flex-wrap: wrap;
+}
 
+.five-sc .gift {
+    max-width: 230px;
+    position: relative;
 
+}
 
+.five-sc .gift p {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 4px;
+}
 
+.five-sc .gift strong {
+    padding-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title);
+}
 
+.five-sc .gift svg {
+    border-radius: 4px 4px 12px 4px;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background-color: var(--primary);
+    position: relative;
+    transform: translate(89px, -8px);
+}
 
+/******************** Section Six *****************************/
+.six-sc {
+    padding: 96px 0 72px 0;
+}
 
+.six-sc img {
+    max-width: 319.9999956848051px;
+    width: 100%;
+    height: auto;
+}
 
+.six-sc .row {
+    margin: auto;
+    background-color: var(--primary);
+    border-radius: 64px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.six-sc .text div {
+    width: min-content;
+    row-gap: 16px;
+
+}
+
+.six-sc .text h3 {
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 208px;
+    text-align: start;
+    margin-bottom: 24px;
+}
+
+.six-sc .text input {
+    border: none;
+    padding-left: 24px;
+    height: 55px;
+    width: 264px;
+    border-radius: 64px;
+}
+
+.six-sc .text button {
+    border: none;
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 64px;
+    background-color: var(--title);
+    color: var(--white);
+}
+
+/**************************** Footer ****************************************/
+footer {
+    padding: 72px 0 72px 0;
+}
+
+footer {
+    background-image: url(../Assets/Images/footer-left.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position-x: 120px;
+    background-position-y: center;
+
+}
+
+footer .row {
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-image: url(../Assets/Images/footer-right.png);
+    background-position-x: right;
+    background-position-y: 70px;
+    padding-bottom: 100px;
+}
+
+footer img {
+    width: 65%;
+    height: auto;
+}
+
+footer ul li:first-child {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+footer ul li:not(:last-of-type) {
+    margin-bottom: 12px;
+}
 
 
 
 
 
 @media (max-width:992px) {
-    .four-sc{
-        padding-inline-start: 0;
-        padding-inline-end: 0;
-    }
-    .four-sc .cards{
+    
+
+    .four-sc .cards {
         gap: 24px;
     }
-    .four-sc .card{
+
+    .four-sc .card {
         width: 200px;
     }
 }
 
 @media (max-width:768px) {
-    .four-sc .cards{
-        gap: 20px;
+    .four-sc .cards {
+        gap: 16px;
     }
-    .four-sc .card{
-        width: 190px;
+
+    .four-sc .card {
+        width: 180px;
+    }
+    .six-sc  .row {
+        flex-direction: column;
     }
 }
 
 
-
-
-
-
-
-
-
-
-
 @media (max-width:576px) {
-    header li{
+.text-center-sm{
+    text-align: center;
+}
+    header li {
         display: none;
     }
-    header nav{
+
+    header nav {
         direction: rtl;
         position: relative;
     }
-    header nav ul+svg{
-         margin-left: 0;
+
+    header nav ul+svg {
+        margin-left: 0;
     }
-    header nav>svg:nth-child(1){
+
+    header nav>svg:nth-child(1) {
         display: inline-block;
         margin-left: 19px;
     }
-    header ul{
+
+    header ul {
         row-gap: 19px;
         direction: ltr;
     }
-    header nav>svg:nth-child(1):hover+ul     {
+    header nav:hover ul{
+        display: f;
+    }
+    header nav>svg:nth-child(1):hover+ul{
         display: flex;
         flex-direction: column;
         position: absolute;
         top: calc(100% + 15px);
-        width:calc(100vw - 32px ) ;
+        width: calc(100vw - 32px);
         background: #f6f6f6;
         border-radius: 0 0 6px 6px;
         align-items: center;
@@ -414,19 +491,66 @@ header nav > svg:nth-child(1){
         background-size: 120px;
         height: auto;
     }
-   header nav>svg:nth-child(1):hover+ul li {
-    display: inline-block;
-   }
-    header nav>svg:nth-child(1):hover+ul::before{
+        header nav li:first-of-type::before{
+        content: "";
+        border-style: solid;
+        position: absolute;
+        right: -2px;
+        top:-25px;
+        border-width: 10px;
+        border-color:transparent transparent #f6f6f6 transparent ;
+    }
+    header nav>svg:nth-child(1):hover+ul li {
+        display: inline-block;
+    }
+
+    header nav>svg:nth-child(1):hover+ul::before {
         content: "";
         width: 10px;
     }
-    .four-sc .cards{
+    .hero-sc .text {
+        text-align: center;
+    }
+    /******/
+    .four-sc .cards {
+            gap: 16px;
+    }
+   
+    /***************/
+    .five-sc .gifts{
         gap: 16px;
     }
-    .four-sc .card{
-        width: 100%;
-        max-width: 240px;
+    .five-sc .gift svg{
+        transform: translate(80px, -8px);
     }
+/*************/
+footer .logo{
+    padding: 0;
+}
+footer .avail img {
+    width: min-content;
+
+}
+
+
+
+
+    
+
+  
+
     /*****************************/
 }
+
+
+
+
+@media (max-width:440px){
+    .four-sc .card{
+        width: 140px;
+    }
+    .four-sc .card svg{
+        left: 0;
+    }
+}
+
